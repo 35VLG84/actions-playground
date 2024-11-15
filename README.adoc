@@ -1,4 +1,5 @@
-[![Build status](https://github.com/35VLG84/actions-playground/actions/workflows/build.yml/badge.svg)](https://github.com/35VLG84/actions-playground/actions)
+image:https://github.com/35VLG84/actions-playground/actions/workflows/build.yml/badge.svg["build status", link="https://github.com/35VLG84/actions-playground/actions"]
+
 
 = README
 
