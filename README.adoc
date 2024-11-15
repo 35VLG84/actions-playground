@@ -1,3 +1,5 @@
+[![Build status](https://github.com/35VLG84/actions-playground/actions/workflows/build.yml/badge.svg)](https://github.com/35VLG84/actions-playground/actions)
+
 = README
 
 Playground for Rusty Github Actions
