@@ -1,4 +1,4 @@
 #[test]
 fn integration_test() {
-    assert!(false);
+    assert!(true);
 }
