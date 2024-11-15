@@ -1,0 +1,25 @@
+name: test
+
+on: [ push, pull_request ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Clippy
+        run: cargo clippy
+
+      - name: Test
+        run: cargo test
+
+      - name: Build
+        run: cargo build
+
