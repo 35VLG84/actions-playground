@@ -1,5 +1,5 @@
 image:https://github.com/35VLG84/actions-playground/actions/workflows/build.yml/badge.svg["build status", link="https://github.com/35VLG84/actions-playground/actions"]
-
+image:https://img.shields.io/github/v/release/e257-fi/tackler-ng?include_prereleases&color=%230868da["Github Release", https://github.com/e257-fi/tackler-ng/releases]
 
 = README
 
