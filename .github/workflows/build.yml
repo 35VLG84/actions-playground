@@ -13,7 +13,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-directories: "~/.rustup"
-          key: "1.82.0"
+          key: "1.82.0-no-stable"
       - run: rustup toolchain remove stable && rustup show
       - run: cargo fmt --all --check
 
@@ -24,7 +24,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-directories: "~/.rustup"
-          key: "1.82.0"
+          key: "1.82.0-no-stable"
       - run: rustup toolchain remove stable && rustup show
       - run: cargo clippy --workspace --all-targets --no-deps -- -D warnings
   
@@ -35,7 +35,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-directories: "~/.rustup"
-          key: "1.82.0"
+          key: "1.82.0-no-stable"
       - run: rustup toolchain remove stable && rustup show
       - run: cargo test
   
@@ -46,7 +46,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-directories: "~/.rustup"
-          key: "1.82.0"
+          key: "1.82.0-no-stable"
       - run: rustup toolchain remove stable && rustup show
       - run: cargo build
 
