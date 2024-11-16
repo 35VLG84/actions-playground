@@ -1,4 +1,5 @@
 #[test]
 fn integration_test() {
-    assert!(true);
+    let i = 1;
+    assert_eq!(i, 0);
 }
