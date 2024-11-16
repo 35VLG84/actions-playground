@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: rustup show
       - uses: Swatinem/rust-cache@v2
+        with:
+          cache-directories: "~/.rustup"
+          key: "1.82.0"
+      - run: rustup show
       - run: cargo fmt --all --check
 
   clippy:
@@ -29,15 +32,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: rustup show
       - uses: Swatinem/rust-cache@v2
+        with:
+          cache-directories: "~/.rustup"
+          key: "1.82.0"
+      - run: rustup show
       - run: cargo test
   
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: rustup show
       - uses: Swatinem/rust-cache@v2
+        with:
+          cache-directories: "~/.rustup"
+          key: "1.82.0"
+      - run: rustup show
       - run: cargo build
 
